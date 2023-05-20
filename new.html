@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <title>Document</title>
+    <style>
+        .teeth {
+            border: 1px solid black;
+            height: fit-content;
+            margin-right: 1200px;
+            /* width: 1000px; */
+            /* margin-top: 100px; */
+        }
+
+        .main {
+            width: 400px;
+            height: 420px;
+            box-shadow: 2px 3px 10px black;
+            background-color: red;
+            border: 1px solid black;
+            position: absolute;
+            border-radius: 17px;
+            z-index: 999;
+            margin-top: 40px;
+            margin-left: 130px;
+        }
+
+        .solo {
+            width: 400px;
+            height: 400px;
+            margin-left: 131px;
+            margin-top: 60px;
+
+            top: 0;
+            border-radius: 17px;
+            position: absolute;
+            transition: all 0.5s linear;
+            box-shadow: 1px 2px 8px black;
+            background-color: red;
+            border: 1px solid black;
+            /* overflow-x: hidden; */
+
+        }
+
+        .yes {
+            margin-left: 360px;
+            margin-top: 10px;
+        }
+
+        .go {
+            /* transform: translateX(270px); */
+            margin-left: 500px;
+        }
+
+        .lona {
+            margin-left: 42px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .level {
+            margin-left: 42px;
+            width: 300px;
+            border: 1px solid whitesmoke;
+            /* outline: 1px solid blue; */
+            margin-top: 30px;
+            height: 35px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 8px;
+            padding-left: 14px;
+            box-shadow: 0px 0px 4px black;
+        }
+
+        .level:focus {
+            outline: 1px solid red;
+        }
+
+        .woo {
+            margin-top: 38px;
+            margin-left: 140px;
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .woo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .blue {
+            text-decoration: none;
+            color: black;
+        }
+
+        .blue:hover {
+            color: blue;
+        }
+
+        .pdp {
+            margin-left: 70px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .God {
+            margin-left: 50px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .ooo {
+            margin-left: 50px;
+            width: 300px;
+            height: 35px;
+            box-shadow: 0px 0px 4px black;
+            border-radius: 8px;
+            border: 1px solid whitesmoke;
+            margin-top: 5px;
+            padding-left: 12px;
+
+        }
+
+        .ooo:focus {
+            outline: 1px solid red;
+        }
+
+        .ooo2 {
+            margin-left: 50px;
+            width: 300px;
+            height: 35px;
+            box-shadow: 0px 0px 4px black;
+            border-radius: 8px;
+            border: 1px solid whitesmoke;
+            margin-top: 18px;
+            padding-left: 12px;
+
+        }
+
+        .ooo2:focus {
+            outline: 1px solid red;
+        }
+
+        .child {
+            width: 320px;
+            height: 40px;
+            border-radius: 8px;
+            margin-top: 25px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .child a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media screen and (max-width:912px) {
+            .solo {
+                display: none;
+            }
+
+            .main {
+                margin-left: 300px;
+            }
+
+        }
+
+        @media screen and (max-width:820px) {
+            .main {
+                margin-left: 30px;
+
+            }
+
+            .solo {
+                /* display: block; */
+
+            }
+        }
+
+        @media screen and (max-width:804px) {
+            .main {
+                margin-left: 360px;
+            }
+        }
+
+        @media screen and (max-width:785px) {
+            .main {
+                margin-left: 340px;
+            }
+        }
+
+        @media screen and (max-width:763px) {
+            .main {
+                margin-left: 310px;
+            }
+        }
+
+        @media screen and (max-width:735px) {
+            .main {
+                margin-left: 280px;
+            }
+        }
+
+        @media screen and (max-width:718px) {
+            .main {
+                margin-left: 250px;
+            }
+        }
+
+        @media screen and (max-width:676px) {
+            .main {
+                margin-left: 220px;
+            }
+        }
+
+        @media screen and (max-width:640px) {
+            .main {
+                margin-left: 190px;
+            }
+        }
+
+        @media screen and (max-width:610px) {
+            .main {
+                margin-left: 160px;
+            }
+        }
+
+        @media screen and (max-width:585px) {
+            .main {
+                margin-left: 130px;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            .main {
+                margin-left: 70px;
+            }
+        }
+
+        @media screen and (max-width:520px) {
+            .main {
+                margin-left: 60px;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            .main {
+                margin-left: 20px;
+            }
+        }
+
+        @media screen and (max-width:440px) {
+            .main {
+                margin-left: 10px;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .main {
+                margin-left: 0px;
+            }
+        }
+
+        @media screen and (max-width:420px) {
+            .main {
+                margin-right: 8px;
+            }
+        }
+
+        @media screen and (max-width:375px) {
+            .main {
+                width: 300px;
+            }
+
+            .level {
+                width: 220px;
+                margin-left: 30px;
+            }
+
+            .woo {
+                margin-left: 80px;
+            }
+
+            .pdp {
+                margin-left: 35px;
+            }
+
+            .lona {
+                margin-left: 33px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="teeth">
+        <div class="main">
+            <!-- <button onclick="flow()" class="icofont-navigation-menu yes"></button> -->
+            <h2 class="lona">LOG IN</h2>
+            <input class="level" type="text" id="level1" placeholder="Email or phonenumber">
+            <input class="level" type="text" id="level2" placeholder="password">
+            <input class="level" type="text" id="level3" placeholder="username">
+            <button onclick="life()" class="woo">Log in</button>
+            <p class="pdp">Dont have an account? <a class="blue" onclick="flow()" href="#">sign up here</a></p>
+        </div>
+        <div id="sop" class="solo">
+            <h2 class="God">Sign up</h2>
+            <label for="Email or phonenumber"></label><br>
+            <input class="ooo" type="text" name="firstname" id="God" placeholder="Email or phonenumber">
+            <label for="password"></label><br>
+            <input class="ooo2" type="text" name="lastname" id="Son" placeholder="password">
+            <label for="username"></label><br>
+            <input class="ooo2" type="text" name="Email" id="Spirit" placeholder="username">
+            <button onclick="live()" class="child"><a href="#">Join now</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="new.js"></script>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 330px;
+            height: 440px;
+            margin: auto;
+            margin-top: 50px;
+            padding-top: 8px;
+            box-shadow: 3px 2px 5px 3px rgb(87, 75, 75);
+            /* border: 1px solid black; */
+        }
+
+        #level {
+            width: 300px;
+            height: 10px;
+            padding: 12px;
+            margin-top: 3px;
+            margin-left: 12px;
+            font-size: 17px;
+            font-weight: 500;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .ask {
+            margin-bottom: 13px;
+        }
+
+        .ronaldo {
+            width: 120px;
+            height: 35px;
+            margin-top: 20px;
+            margin-left: 13px;
+            font-weight: 600;
+            color: white;
+            background-color: rgb(27, 153, 155);
+            border: 1px solid rgb(27, 153, 155);
+            border-radius: 3px;
+        }
+
+        .ronaldo:active {
+            background-color: rgba(27, 153, 155, 0.8);
+        }
+
+        .ronaldo2 {
+            width: 120px;
+            height: 35px;
+            margin-top: 20px;
+            margin-left: 1px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        .ronaldo2:active {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .rhyme {
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            margin-left: 10px;
+            color: grey;
+            padding-bottom: 30px;
+        }
+
+        .messi {
+            margin-left: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            color: grey;
+        }
+
+        .funny {
+            border-top: 1px solid grey;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            margin-top: 30px;
+            width: 330px;
+            padding-left: 15px;
+            padding-right: 15px;
+            /* margin-left: 12px; */
+        }
+
+        .monday {
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+        }
+
+        .amvca {
+            width: 300px;
+            height: 35px;
+            border: 1px solid rgb(184, 179, 179);
+            padding: 10px;
+        }
+
+        .go {
+            font-size: 8px;
+            margin-left: 200px;
+            color: grey;
+            border: none;
+            position: fixed;
+        }
+
+        .go:hover {
+            background-color: rgb(232, 17, 35);
+            color: white;
+        }
+        ul li{
+            text-decoration: none;
+            
+           
+            display: flex;
+            /* margin-right: 30px; */
+            justify-content: space-around;
+            width: 300px;
+        }
+        ul{
+            /* border: 1px solid grey; */
+            /* box-shadow: 2px 2px 4px black; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ask">
+            <span class="rhyme">Task list</span>
+
+
+        </div>
+        <span class="messi">New task</span>
+        <br>
+        <input id="level" type="text">
+        <br>
+        <button class="ronaldo" onclick="boom()">ADD TASK</button>
+
+        <div class="funny">
+            <p class="monday">Tasks</p>
+            <ul class="collection">
+                <p id="show"></p>
+            </ul>
+            <button class="ronaldo2">CLEAR TASKS</button>
+            <!-- <p id="show"></p>  -->
+
+        </div>
+    </div>
+
+
+    <script>
+        let screen = document.getElementById("show")
+
+        //screen.innerHTML = items;
+        // screen.innerHTML = items[0];
+        // screen.innerHTML = items[1];
+        // screen.innerHTML = items[2];
+
+
+        // items.map((dan))
+
+        function boom() {  
+
+            let taskList = document.querySelector('.collection')
+             let baddo = ["nema","nfiub","inf","fejf","hefj"];
+             me = document.getElementById("level").value;
+             baddo.splice(-1, -1)
+             console.log(baddo)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+             baddo.map((me) => {
+
+                 screen.innerHTML += me + "<br>"
+             });
+            // const li = document.createElement("li");
+            // li.className = "collection-item";
+            // li.appendChild(document.createTextNode(me))
+            // const link = document.createElement('a')
+            // link.className = "delete-item secondary-content"
+            // link.innerHTML = "<button>x</button>"
+            // li.appendChild(link)
+
+            // taskList.appendChild(li)
+            // me = ''
+            
+
+
+        }
+        //  function go() {
+        //     let screen = document.getElementById("show").innerHTML = " "
+
+        
+// let array = [];
+// for (let index = 0; index < array.length; index++) {
+//     const dan = array[index]
+//     screen.innerHTML += `
+//           <div>
+//           <span>${dan}</span>
+//           <button>del</button>  
+//         </div>
+//     `
+// }
+//}
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 318px;
+            height: 518px;
+            border: 1px solid black;
+            margin: auto;
+            box-shadow: 5px 5px 30px black;
+        }
+        .first{
+            width: 318px;
+            height: 70px;
+            border: none;
+            border-bottom: 1px solid;
+        }
+        .second{
+            width: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            /* border-top: 1px solid black; */
+        }
+        .friend{
+            width: 75px;
+            color: black;
+            height: 70px;
+            margin-top: 2px;
+            /* border-left: none; */
+            margin-left: 2px;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .friend1{
+            width: 75px;
+            color: white;
+            background-color: black;
+            height: 70px;
+            margin-top: 2px;
+            /* border-left: none; */
+            margin-left: 2px;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .friend:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+      <div style="font-size: 30px; padding-top: 5px;" id="show" class="first"></div>
+      <div class="second">
+        <div onclick="lum()"  class="friend1">C</div>
+        <div class="friend"></div>
+        <div class="friend"></div>
+        <div class="friend">&larr;</div>
+        <div class="friend"></div>
+        <div class="friend"></div>
+        <div class="friend"></div>
+        <div class="friend">/</div>
+        <div onclick="sum(7)" class="friend">7</div>
+        <div onclick="sum(8)" class="friend">8</div>
+        <div onclick="sum(9)" class="friend">9</div>
+        <div class="friend">*</div>
+        <div onclick="sum(4)"class="friend">4</div>
+        <div onclick="sum(5)"class="friend">5</div>
+        <div onclick="sum(6)"class="friend">6</div>
+        <div onclick="sum()"class="friend">-</div>
+        <div onclick="sum(1)"class="friend">1</div>
+        <div onclick="sum(2)"class="friend">2</div>
+        <div onclick="sum(3)"class="friend">3</div>
+        <div onclick="sum()" class="friend">+</div>
+        <div class="friend"></div>
+        <div onclick="sum(0)" class="friend">0</div>
+        <div onclick="sum(.)" class="friend">.</div>
+        <div style="background-color: blue;" class="friend">=</div>
+      </div>
+   </div>
+</body>
+</html>
+   
+
+<script src="calculation.js"></script>
+

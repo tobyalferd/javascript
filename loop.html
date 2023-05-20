@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="water">
+<button onclick="mind()">click</button>
+<h1 id="show"></h1>
+
+
+
+
+    <script>
+        // for(index = 0; index < 20; index++){
+        //     console.log(index)
+        // }
+        // let index = 0;
+        // while(index < 20){
+        //     index++
+        //     console.log(index)
+        // }
+        function mind(){
+            //  screen.innerHTML = ""
+            let me = document.getElementById("water").value;
+            let screen = document.getElementById("show")
+         for(index = 1; index < 20; index++){
+             screen.innerHTML +="<P>"+ me + "*" + index + "=" + me * index + "<br>";
+        }
+        }
+    </script>
+</body>
+</html>

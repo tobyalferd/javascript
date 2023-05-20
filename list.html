@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+</head>
+<style>
+    #garri {
+        width: 340px;
+        display: flex;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 7px;
+        font-family: cursive;
+        font-size: 15px;
+        justify-content: space-between;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+
+    }
+
+    #garri button {
+        margin-left: 170px;
+        background-color: white;
+        border-radius: 100%;
+        border: none;
+    }
+
+    #garri button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    #garri span {
+        width: 150px;
+    }
+
+    #old {
+        width: 310px;
+        margin-left: 16.5px;
+        padding: 10px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        outline: none;
+        font-family: cursive;
+        font-size: 15qpx;
+
+    }
+
+    .sense {
+        height: 30px;
+        width: 120px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: 13px;
+        font-weight: 600;
+        color: white;
+        background-color: rgb(27, 153, 155);
+        border: 1px solid rgb(27, 153, 155);
+        border-radius: 3px;
+    }
+
+    .sense:active {
+        background-color: rgba(27, 153, 155, 0.8);
+    }
+
+    .container {
+        width: 360px;
+        height: 500px;
+        /* padding: 17px; */
+        box-shadow: 3px 2px 5px 3px rgb(87, 75, 75);
+        margin: auto;
+        margin-top: 45px;
+    }
+
+    .nepa {
+        font-size: 25px;
+        padding-left: 15px;
+        margin-top: 18px;
+        font-family: cursive;
+        color: grey;
+    }
+
+    .nepa2 {
+        font-size: 25px;
+        padding-left: 15px;
+        margin-top: 18px;
+        font-family: cursive;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .machala {
+        color: grey;
+        margin-left: 18px;
+        font-family: cursive;
+    }
+
+    #ship {
+        border-top: 1px solid grey;
+        margin-top: 40px;
+    }
+
+    #screen {
+        height: 50px;
+    }
+
+    .ronaldo2 {
+        width: 120px;
+        height: 35px;
+        margin-top: 120px;
+        margin-left: 10px;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+
+    .ronaldo2:active {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <span class="nepa">Task List</span><br> <br>
+        <span class="machala">new task</span>
+        <input type="text" id="old">
+        <button class="sense" onclick="list()">Add List</button>
+        <div id="ship">
+            <span class="nepa2">Tasks</span>
+            <p id="screen"></p>
+            <button class="ronaldo2">CLEAR TASKS</button>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        let arry = [];
+
+        function list() {
+            screen = document.getElementById("screen")
+            screen.innerHTML = ""
+            let milo = document.getElementById("old").value;
+            if (milo == "") {
+                alert("input task")
+            }
+            arry.push(milo);
+            console.log(arry);
+            for (let index = 0; index < arry.length; index++) {
+                const dan = arry[index]
+                screen.innerHTML += `
+            <div id="garri">
+           <span class="off">${dan}</span>
+           <button onclick="add(${index})" class="power" >x</button>  
+          </div>`
+            }
+           
+
+            }
+            function add(index){
+                arry.splice(index, 1)
+                console.log(arry)
+                 var current_tasks = document.querySelectorAll('.power');
+           
+            for (var i = 0; i < current_tasks.length; i++) {
+                current_tasks[i].onclick = function () {
+                    this.parentNode.remove();
+                    arry.slice(3,1);
+                }
+            }
+
+       }
+        arry.splice(0, 3)
+
+
+
+
+    </script>
+</body>
+
+</html>

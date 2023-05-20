@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel {
+            overflow: hidden;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .carousel .carousel_item,
+        .carousel.carousel_item--hidden {
+            display: none;
+        }
+
+        .carousel .carousel_item img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+        }
+
+        .carousel .carousel_item--visible {
+            display: block;
+        }
+
+        .carousel .carousel_actions {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel .carousel_actions button {
+            border-radius: 50px;
+            border: 0;
+            font-weight: bold;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+        }
+
+        .carousel .carousel_actions button#carousel_button--prev {
+            margin-left: 20px;
+        }
+
+        .carousel .carousel_actions button#carousel_button--next {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="carousel_item carousel_item--visible">
+            <img src="einstein4.jfif" alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="einstein6.jfif" alt="">
+        </div>
+        <div class="carousel_item">
+            <img src="einstein2.jfif" alt="">
+        </div>
+
+
+
+
+        <div class="carousel_actions">
+            <button id="carousel_button--prev" aria-label="previous slide"></button>
+            <button id="carousel_button--next" aria-label="next slide"></button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+<script src="carosel.js"></script>

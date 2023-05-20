@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="click" type="text">
+    <button onclick="lever()">show</button>
+    <p id="show"></p> -->
+    <input id="hate" type="text">
+    <input id="like" type="text">
+    <button onclick="olode()">check password</button>
+    
+</body>
+</html>
+
+
+
+<script>
+    //CONDITIONAL STATEMENT//
+    //ARRAY//
+    //DOM (document.getelementbyId)
+    
+    // == if the value equals
+    // != if the value does not match
+    // >== if the value is bigger or equal to
+    // <== if the value is smaller or equal to
+//  function lever(){
+//     let age = 30;
+//     let imp = document.getElementById("click").value
+//     if(imp > 30 ){
+//         alert( "you can proceed")
+//     } else{
+//         alert("cannot proceed")
+//     }
+  
+    // document.getElementById("show").innerHTML = imp
+  
+//  };
+
+    function olode(){
+        let inp = document.getElementById("like").value
+        let inp2 = document.getElementById("hate").value
+        if(inp == inp2){
+            alert("proceed")
+        } else{
+            alert("incorrect password check again")
+        }
+    }
+</script>

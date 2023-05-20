@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        .money{
+            width: 300px;
+            height: 250px;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 100px;
+            background-color: aquamarine;
+            box-shadow: 2px 3px 10px black;
+            border-radius: 20px;
+            border:none
+        }
+        #level{
+            margin-top: 20px;
+            margin-left: 60px;
+            height: 30px;
+            border: 1px solid white;
+            box-shadow: 1px 2px 4px black;
+            border-radius: 10px;
+        }
+        #level:focus{
+            outline: 1px solid grey;
+        }
+        
+        #level1{
+            margin-top: 20px;
+            margin-left: 60px;
+            box-shadow: 2px 2px 4px black;
+            border: 1px solid white;
+            height: 30px;
+            border-radius: 10px;
+        }
+        #level1:focus{
+            outline: 1px solid grey;
+        }
+        #level2{
+            margin-top: 20px;
+            margin-left: 60px;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px black;
+            border: 1px solid white;
+        }
+        #level2:focus{
+            outline: 1px solid grey;
+        }
+        #eba{
+            margin-top: 30px;
+            margin-left: 95px;
+            width: 100px;
+            height: 30px;
+            border-radius: 8px;
+            background-color:gold;
+            border: 1px solid aqua;
+            box-shadow: 2px 2px 5px aqua;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="money">
+    <div>
+        <input id="level" type="text">
+    </div>
+    <div>
+        <input id="level1" type="text">
+    </div>
+    <div>
+        <input id="level2" type="text">
+    </div>
+    <button id="eba" onclick="conjest()">check</button>
+   </div>
+</body>
+</html>
+
+<script>
+ 
+    
+   let arry = ["html", "css","house","of","the","lord"]
+
+function conjest(){
+
+    // let names = document.getElementById("level").value;
+    // let emails = document.getElementById("level1").value;
+    // let passwords = document.getElementById("level2").value;
+
+    // let sade = {
+    //     name : names,
+    //     email : emails,
+    //     password : passwords, 
+    // }
+    //  let me = document.getElementById("level").value
+     arry.pop()
+console.log(arry)
+}
+</script>

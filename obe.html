@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            border: 1px solid black;
+            width: 28px;
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="make">oya u go get money</h1>
+   <button onclick="num(1)">1</button>
+   <button onclick="num(2)">2</button>
+   <button onclick="num(3)">3</button>
+   <!-- <p id="shownum"></p> -->
+   <button onclick="dosomething(5 , 10)">click me</button>
+  
+   <button onclick="dev()">click me</button>
+   <input id="down" onkeydown="daniel()" type="text">
+   <input onkeyup="daniell()" type="text">
+   <button onmouseenter="ddaniell()">click me</button>
+   <button id="leave" onmouseleave="ddan()">click me</button>
+   <input onkeypress="()" type="text">
+   <table>
+    <tr>
+        <td id="shownum" colspan="8"></td>
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+        <!-- <td></td> -->
+    </tr>
+    <tr>
+        <td onclick="num(1)">1</td>
+        <td onclick="num(2)">2</td>
+        <td onclick="num(3)">3</td>
+        <td onclick="num(4)">4</td>
+        <td onclick="num(5)">5</td>
+        <td onclick="num(6)">6</td>
+        <td onclick="num(7)">7</td>
+        <td onclick="num(8)">8</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+   </table>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+    let inp1 = document.getElementById("down")
+    let inp2 = document.getElementById("up")
+    function dev(){
+        let result = inp1.value + inp2.value;
+         console.log(result);
+    }
+    console.log(document.getElementById("make").innerHTML);
+
+  function num(figure){
+    document.getElementById("shownum").innerHTML = figure
+  }
+
+
+   let word = "somebody have use broom";
+   let statement = "to measure my leg";
+   console.log(word.concat(statement));
+   console.log(word + statement);
+   
+
+   function ddan(){
+    console.log("mouse left");
+    document.getElementById("leave").style.backgroundColor = "tomato"
+   }
+   
+
+   function ddaniell(){
+    console.log("mouse just moved")
+   }
+
+   function daniel(){
+    console.log(document.getElementById("down").value);
+    console.log("i am typing")
+   }
+   function daniell(){
+       alert("key is up")
+   }
+
+ 
+   function dosomething(a, b){
+    alert(a*b) 
+    console.log(word);
+    saysomething()
+   }
+   function saysomething(){
+    alert("hello world")
+   }
+   
+</script>
